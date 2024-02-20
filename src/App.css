@@ -1,0 +1,390 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  transition: all 500ms ease-in;
+  /* scroll-snap-type: y proximity; */
+
+}
+
+/* 
+::-webkit-scrollbar {
+  display: none;
+} */
+
+input:focus {
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: 'Product-bold';
+  src: url('./assets/fonst/Product-Sans-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'product-regular';
+  src: url('./assets/fonst/Product\ Sans\ Regular.ttf');
+}
+
+.productregular {
+  font-family: 'product-regular';
+
+}
+
+.productBold {
+  font-family: 'Product-bold';
+
+}
+
+.title-banner {
+  font-size: 120px;
+  font-family: Product-bold;
+  line-height: 132px;
+}
+
+.banner-global {
+  max-width: 500px;
+  font-family: 'product-regular';
+  font-size: 28px;
+  line-height: 40px;
+  padding-top: 2rem;
+
+}
+
+button.btn-email a {
+  background: #000000;
+  color: #fff;
+  border-radius: 50px;
+  height: 50px;
+  padding: 0px 20px;
+  display: block;
+  line-height: 50px;
+  font-family: 'product-regular';
+  transition: all 500ms ease-in;
+  border: 1px solid #000000;
+}
+
+.btn-email a:hover svg path {
+  stroke: #000;
+}
+
+.video {
+  width: 100%;
+}
+
+.lorem-ipsum {
+  font-family: product-regular;
+  font-size: 18px;
+  padding-top: 14px;
+}
+
+.border-custom {
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.btn-lets {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.btn-lets svg {
+  margin-right: 10px;
+  position: relative;
+  top: -5px;
+}
+
+.social-list li a {
+  /* display: inline-block; */
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 35px;
+  font-family: 'product-regular';
+  display: inline-flex;
+  align-items: center;
+
+
+}
+
+.social-list li a svg {
+  margin-right: 6px;
+  color: rgba(0, 0, 0, 0.8);
+  height: 8px;
+}
+
+.social-list li a svg path {
+  fill: rgba(0, 0, 0, 0.8);
+}
+
+label.lab-work {
+  font-family: 'product-regular';
+  border-bottom: 1px solid #000;
+  padding-bottom: 12px;
+}
+
+.input-title {
+  background: rgba(0, 0, 0, 0.05);
+  width: 100%;
+  height: 60px;
+  padding-left: 30px;
+  margin-bottom: 1.5rem;
+  border-radius: 18px;
+  font-family: 'product-regular';
+}
+
+.input-textarea {
+  background: rgba(0, 0, 0, 0.05);
+  width: 100%;
+  height: 160px;
+  padding-top: 10px;
+  padding-left: 30px;
+  margin-bottom: 1.5rem;
+  border-radius: 18px;
+  font-family: 'product-regular';
+}
+
+.btn-submit {
+  background: rgba(0, 0, 0, 1);
+  height: 70px;
+  border-radius: 20px;
+  color: #fff;
+  font-family: 'product-regular';
+  padding: 0 2.3rem;
+
+
+}
+
+.btn-behance {
+  display: flex;
+  align-items: center;
+  border: 1px solid #000000;
+  height: 40px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 20px;
+  margin-top: 1rem;
+  margin-right: 20px;
+  font-family: 'product-regular';
+
+}
+
+.btn-behance svg {
+  height: 12px;
+  margin-left: 12px;
+  ;
+}
+
+.btn-email {
+  position: fixed;
+  right: 12px;
+  bottom: 80px;
+
+}
+
+
+@media(max-width: 767px) {
+  .title-banner {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .btn-email {
+    position: fixed;
+    right: 12px;
+    bottom: 50px;
+
+  }
+}
+
+button.btn-email a:hover {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #000000;
+}
+
+.scroller {
+  height: 600px;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.scroller section {
+  scroll-snap-align: start;
+  height: 600px;
+
+}
+
+.newsletter input {
+  background: rgba(243, 243, 243, 1);
+  height: 50px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.newsletter button {
+  background: rgba(0, 0, 0, 1);
+  height: 50px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  color: #fff;
+  font-family: product-regular;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+.list-section li {
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: product-regular;
+  color: #000;
+  margin-right: 20px;
+
+}
+
+.btnstart {
+  background: rgba(0, 0, 0, 1);
+  color: #fff;
+  height: 46px;
+  padding-left: 12px;
+  padding-right: 12px;
+
+}
+
+.btnstart a {
+  color: #fff;
+
+}
+
+.sectiom-onetwo {
+  position: sticky;
+  top: 0;
+  height: 500px;
+  overflow-y: scroll;
+  /* scroll-snap-type: y mandatory; */
+  /* overflow-y: scroll;
+  height: 100vh; */
+}
+
+.sectiom-onetwo section {
+  /* height: 30vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* scroll-snap-align: start; */
+}
+
+
+.brand-identity-design {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  position: relative;
+  left: -130px;
+}
+
+ul.list-cofee {
+  /* text-align: center; */
+  font-family: 'product-regular';
+  padding: 0;
+  margin: 0;
+}
+
+ul.list-cofee li {
+  display: inline-block;
+  width: 140px;
+  text-align: center;
+
+}
+
+ul.list-cofee li img {
+  height: 100px;
+}
+
+ul.list-cofee label {
+  margin-right: 39px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.footer-bg {
+  height: 100vh;
+  background-color: #000000;
+  color: #fff;
+}
+
+.social-list-1 li a {
+  font-family: 'product-regular';
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  height: 40px;
+  /* display: block; */
+  /* line-height: 40px; */
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 10px 20px;
+  transition: all 500ms ease;
+  /* max-width: 150px; */
+}
+
+.social-list-1 li a:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #fff;
+
+}
+
+.email-type {
+  height: 50px;
+  width: 100%;
+  /* padding-left: 20px; */
+  font-family: 'Product-bold';
+  max-width: 500px;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.email-type:focus {
+  outline: none;
+  /* border: none; */
+}
+
+.list-soci-sec li a {
+  font-family: 'product-regular';
+  line-height: 22px;
+  transition: all 500ms ease;
+  padding-bottom: 5px;
+  display: inline-block;
+  margin-bottom: 10px;
+
+}
+
+.list-soci-sec li a:hover {
+  border-bottom: 1px solid #fff;
+}
