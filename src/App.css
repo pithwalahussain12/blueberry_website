@@ -20,7 +20,7 @@ input:focus {
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 90%;
   width: 100%;
   margin: 0 auto;
 }
@@ -131,6 +131,7 @@ label.lab-work {
   font-family: 'product-regular';
   border-bottom: 1px solid #000;
   padding-bottom: 12px;
+  cursor: pointer;
 }
 
 .input-title {
@@ -176,20 +177,24 @@ label.lab-work {
   margin-top: 1rem;
   margin-right: 20px;
   font-family: 'product-regular';
+  transition: all 500ms ease-in;
 
 }
 
 .btn-behance svg {
   height: 12px;
   margin-left: 12px;
-  ;
 }
 
 .btn-email {
   position: fixed;
-  right: 12px;
+  right: 70px;
   bottom: 80px;
 
+}
+
+.btn-email label {
+  cursor: pointer;
 }
 
 
@@ -387,4 +392,19 @@ ul.list-cofee label {
 
 .list-soci-sec li a:hover {
   border-bottom: 1px solid #fff;
+}
+
+.btn-behance:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-behance:hover svg path {
+  stroke: #fff;
+}
+
+.value-bg {
+  border-bottom: 2px solid #fff;
+  width: 340px;
+  padding-bottom: 8px;
 }

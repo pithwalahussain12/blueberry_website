@@ -1,6 +1,8 @@
 import React from 'react'
 import Header from '../component/Header'
 import Footer from '../component/Footer'
+import Footer2 from '../component/footer2'
+
 
 export default function Startintake() {
     return (
@@ -38,7 +40,7 @@ export default function Startintake() {
                             <ul className='list-cofee'>
                                 <li>
                                     <img src='https://www.every-day.nl/app/themes/everyday/dist/images/koffie.png' alt='' />
-                                    <label>Koffie</label>
+                                    <label>Coffee</label>
                                 </li>
                                 <li>
                                     <img src='https://www.every-day.nl/app/themes/everyday/dist/images/cappuccino.png' alt='' />
@@ -75,7 +77,7 @@ export default function Startintake() {
                     </div>
                 </div>
             </div>
-            <Footer />
+            <Footer2 />
         </div>
     )
 }

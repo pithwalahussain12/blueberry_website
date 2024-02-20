@@ -5,6 +5,8 @@ import Portfolio from '../component/Portfolio'
 import Contact1 from '../component/Contact'
 import Transform from '../component/Transform'
 import Applysection from '../component/Applysection'
+import Footer2 from '../component/footer2'
+
 
 export default function Contact() {
     return (
@@ -14,7 +16,9 @@ export default function Contact() {
             <Applysection />
             <Portfolio />
             <Contact1 />
-            <Footer />
+            <Footer2 />
+
+            {/* <Footer /> */}
         </div>
     )
 }

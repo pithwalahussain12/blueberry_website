@@ -9,8 +9,8 @@ export default function Contact() {
                         <h1 className='text-6xl productBold'>
                             We would love to <br /> hear from you.
                         </h1>
-                        <p className='pt-4 productregular w-96'>
-                            Feel free to reach out if you want to collcollaborate
+                        <p className='pt-6 productregular text-lg w-96'>
+                            Feel free to reach out if you want to Collaborate
                             with us, or simply have a chat.
                         </p>
                     </div>

@@ -8,8 +8,8 @@ export default function Footer2() {
                     <div className='lg:grid block lg:grid-cols-3'>
                         <div className='col-span-2'>
                             <p className='productBold text-xl'>Let's Talk</p>
-                            <h1 className='productBold text-4xl pt-4 underline'>
-                                <a>
+                            <h1 className='productBold text-4xl pt-4 value-bg'>
+                                <a href="mailto:creative@blueb.club">
                                     creative@blueb.club
                                 </a>
                             </h1>
@@ -18,17 +18,13 @@ export default function Footer2() {
                                 <h3 className='productregular'>Job Applications
                                 </h3>
                                 <p className='productBold'>
-                                    enquiry@blueb.club
-
-
-
-
-
-
+                                    <a href="mailto:enquiry@blueb.club" className='cursor-pointer'>
+                                        enquiry@blueb.club
+                                    </a>
                                 </p>
                             </div>
                             <div>
-                                <h3 className='productBold text-xl'>Join us and Suscribe to our Newsletter!</h3>
+                                <h3 className='productBold text-xl'>Join us and Subscribe to our Newsletter!</h3>
                                 <form className='relative lg:w-[500px]'>
                                     <input type='email' className='email-type' placeholder='Email Address' />
                                     <div className='absolute top-6 right-2'>
@@ -58,7 +54,7 @@ export default function Footer2() {
                                             <a href=''>Twitter</a>
                                         </li>
                                         <li>
-                                            <a href=''>Linkdein</a>
+                                            <a href=''>Linkedin</a>
                                         </li>
                                         <li>
                                             <a href='https://www.facebook.com/blueberrycreativeclub/'>Facebook</a>

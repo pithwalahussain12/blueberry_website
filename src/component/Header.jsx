@@ -6,7 +6,10 @@ export default function Header() {
             <div className='container'>
                 <div className='flex justify-between items-center'>
                     <div className='logo-main py-4 ml-2'>
-                        <img src='/assets/images/Logo.png' alt='' />
+                        <a href='/'>
+                            <img src='/assets/images/Logo.png' alt='' />
+
+                        </a>
                     </div>
 
                     <div>
@@ -31,7 +34,7 @@ export default function Header() {
                             </li> */}
 
                             <li className='btnstart'>
-                                <a>
+                                <a href="/start" className='px-2'>
                                     Start Intake
                                 </a>
                             </li>
