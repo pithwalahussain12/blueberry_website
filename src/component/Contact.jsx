@@ -1,6 +1,27 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm('service_inpe8ir', 'template_zzpez99', form.current, {
+                publicKey: 'oYNFMRiX1725GaqBq',
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                    alert('Contact Form Submitted')
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                    alert('Getting Error')
+                },
+            );
+    };
     return (
         <div className='py-20'>
             <div className='container'>
@@ -15,23 +36,30 @@ export default function Contact() {
                         </p>
                     </div>
                     <div>
-                        <form>
+                        <form ref={form} onSubmit={sendEmail}>
+                            <input type="text" className='input-title' required placeholder='Full name' name="user_name" />
+                            <input type="email" className='input-title' required placeholder='Email address' name="user_email" />
                             <div>
-                                <input type='text' className='input-title' placeholder='Full name' />
+                                <input type='text' className='input-title' name='company_name' required placeholder='Company Name' />
                             </div>
-                            <div>
-                                <input type='email' className='input-title' placeholder='Email address' />
-                            </div>
-                            <div>
-                                <input type='text' className='input-title' placeholder='Company Name' />
-                            </div>
-                            <div>
-                                <textarea type='text' className='input-textarea' placeholder='Message'></textarea>
-                            </div>
-                            <div>
-                                <button className='btn-submit'>Submit</button>
-                            </div>
+                            <textarea className='input-textarea' required placeholder='Message' name="message" />
+                            <input type='submit' className='btn-submit' value="Send" />
                         </form>
+                        {/* <form>
+                            <div>
+                                <input type='text' className='input-title' required placeholder='Full name' />
+                            </div>
+                            <div>
+                                <input type='email' className='input-title' required placeholder='Email address' />
+                            </div>
+                          
+                            <div>
+                                <textarea type='text' className='input-textarea' required placeholder='Message'></textarea>
+                            </div>
+                            <div>
+                                <button type='submit' className='btn-submit'>Submit</button>
+                            </div>
+                        </form> */}
                     </div>
                 </div>
             </div>

@@ -190,6 +190,7 @@ label.lab-work {
   position: fixed;
   right: 70px;
   bottom: 80px;
+  z-index: 999999;
 
 }
 
@@ -407,4 +408,10 @@ ul.list-cofee label {
   border-bottom: 2px solid #fff;
   width: 340px;
   padding-bottom: 8px;
+}
+
+.bg-grayes {
+  background: rgba(243, 243, 243, 1);
+  padding: 20px;
+  padding: 20px 40px;
 }

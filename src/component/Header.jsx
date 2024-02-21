@@ -34,7 +34,7 @@ export default function Header() {
                             </li> */}
 
                             <li className='btnstart'>
-                                <a href="/start" className='px-2'>
+                                <a href="/start" className='lg:px-2'>
                                     Start Intake
                                 </a>
                             </li>

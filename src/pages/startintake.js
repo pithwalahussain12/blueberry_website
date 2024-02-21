@@ -9,9 +9,9 @@ export default function Startintake() {
         <div>
             <Header />
             <div>
-                <div className='container'>
-                    <div className='grid grid-cols-2 gap-12 pb-16'>
-                        <div>
+                <div className=''>
+                    <div className='grid grid-cols-2 gap-20 pb-16'>
+                        <div className='lg:pl-[10%] lg:w-[600px]'>
                             <h2 className='productBold text-2xl pt-12'>Acquainted?</h2>
                             <p className='productregular text-lg pb-6'>Enter your details here and you will be in touch with one of our professionals in no time for an intake!</p>
 
@@ -33,7 +33,7 @@ export default function Startintake() {
                                 </div>
                             </form>
                         </div>
-                        <div>
+                        <div className='bg-grayes lg:pr-[10%]'>
                             <h2 className='productBold text-2xl pt-12'>What do you like to drink?</h2>
                             <p className='productregular text-lg pb-6'>The difference is in small details.</p>
 
