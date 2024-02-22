@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Footer2() {
     return (
-        <div className='footer-bg pt-10'>
+        <div className='footer-bg pt-10 relative'>
             <div className='container'>
                 <div>
                     <div className='lg:grid block lg:grid-cols-3'>
@@ -14,7 +14,7 @@ export default function Footer2() {
                                 </a>
                             </h1>
 
-                            <div className='py-10'>
+                            <div className='py-14'>
                                 <h3 className='productregular'>Job Applications
                                 </h3>
                                 <p className='productBold'>
@@ -33,7 +33,7 @@ export default function Footer2() {
                                 </form>
                             </div>
                             <div>
-                                <h1 className='productBold lg:text-[190px] mt-10'>Blueberry.</h1>
+                                <h1 className='productBold absolute bottom-0 lg:text-[200px] mt-10'>Blueberry.</h1>
                             </div>
                         </div>
 
@@ -51,10 +51,11 @@ export default function Footer2() {
 
                                         </li>
                                         <li>
-                                            <a href=''>Twitter</a>
+                                            <a href='https://twitter.com/BlueberrysClub'>Twitter</a>
                                         </li>
                                         <li>
-                                            <a href=''>Linkedin</a>
+                                            <a href='https://www.linkedin.com/company/blueberrys-club
+'>Linkedin</a>
                                         </li>
                                         <li>
                                             <a href='https://www.facebook.com/blueberrycreativeclub/'>Facebook</a>

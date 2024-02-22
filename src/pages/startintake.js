@@ -1,13 +1,46 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Header from '../component/Header'
-import Footer from '../component/Footer'
 import Footer2 from '../component/footer2'
+import emailjs from '@emailjs/browser';
 
 
 export default function Startintake() {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm('service_rumcnc4', 'template_mhhzsvc', form.current, {
+                publicKey: 'h58SAu3SfQU8mSOQ0',
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                    alert('Contact Form Submitted')
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                    alert('Getting Error')
+                },
+            );
+    };
     return (
         <div>
             <Header />
+            <a href="mailto:creative@blueb.club">
+
+                <button className='btn-email'>
+                    <a href="mailto:creative@blueb.club" className='!flex items-center'>
+
+                        <svg width="10" height="10" className='mr-2' viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.11108 9.19469L8.69439 1.61133M8.69439 1.61133V8.89135M8.69439 1.61133H1.41442" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        <label className='block'>creative@blueb.club</label>
+                    </a>
+                </button>
+            </a>
             <div>
                 <div className=''>
                     <div className='grid grid-cols-2 gap-20 pb-16'>
@@ -15,22 +48,14 @@ export default function Startintake() {
                             <h2 className='productBold text-2xl pt-12'>Acquainted?</h2>
                             <p className='productregular text-lg pb-6'>Enter your details here and you will be in touch with one of our professionals in no time for an intake!</p>
 
-                            <form>
+                            <form ref={form} onSubmit={sendEmail}>
+                                <input type="text" className='input-title' required placeholder='Full name' name="user_name" />
+                                <input type="email" className='input-title' required placeholder='Email address' name="user_email" />
                                 <div>
-                                    <input type='text' className='input-title' placeholder='Full name' />
+                                    <input type='text' className='input-title' name='company_name' required placeholder='Company Name' />
                                 </div>
-                                <div>
-                                    <input type='email' className='input-title' placeholder='Email address' />
-                                </div>
-                                <div>
-                                    <input type='text' className='input-title' placeholder='Company Name' />
-                                </div>
-                                <div>
-                                    <textarea type='text' className='input-textarea' placeholder='Message'></textarea>
-                                </div>
-                                <div>
-                                    <button className='btn-submit'>Submit</button>
-                                </div>
+                                <textarea className='input-textarea' required placeholder='Message' name="message" />
+                                <input type='submit' className='btn-submit' value="Send" />
                             </form>
                         </div>
                         <div className='bg-grayes lg:pr-[10%]'>
@@ -63,7 +88,7 @@ export default function Startintake() {
 
                                 <li>
                                     <img src='https://www.every-day.nl/app/themes/everyday/dist/images/beer.png' alt='' />
-                                    <label>Bier</label>
+                                    <label>Beer</label>
                                 </li>
 
                                 <li>

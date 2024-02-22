@@ -75,7 +75,11 @@ export default function Expertise() {
 
         //     </div>
         // </div>
+
         <div class="relative">
+            <div className='container'>
+                <h1 className='lg:text-8xl text-3xl py-24 productBold'>Our expertise in</h1>
+            </div>
             <div class="sticky top-0 h-screen bg-white flex justify-start items-center">
                 <div>
                     <section className=''>
