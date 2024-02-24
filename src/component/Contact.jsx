@@ -37,8 +37,8 @@ export default function Contact() {
                     </div>
                     <div>
                         <form ref={form} onSubmit={sendEmail}>
-                            <input type="text" className='input-title' required placeholder='Full name' name="user_name" />
-                            <input type="email" className='input-title' required placeholder='Email address' name="user_email" />
+                            <input type="text" className='input-title' required placeholder='Full name' name="from_name" />
+                            <input type="email" className='input-title' required placeholder='Email address' name="from_email" />
                             <div>
                                 <input type='text' className='input-title' name='company_name' required placeholder='Company Name' />
                             </div>
