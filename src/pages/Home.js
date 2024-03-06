@@ -12,7 +12,7 @@ import Footer2 from '../component/footer2'
 
 export default function Home() {
     return (
-        <div>
+        <div className='app'>
             <Header />
             <Banner />
             <Expertise />

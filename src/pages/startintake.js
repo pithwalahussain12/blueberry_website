@@ -41,9 +41,9 @@ export default function Startintake() {
                     </a>
                 </button>
             </a>
-            <div>
+            <div className='mt-20'>
                 <div className=''>
-                    <div className='grid grid-cols-2 gap-20 pb-16'>
+                    <div className='grid grid-cols-2 gap-20'>
                         <div className='lg:pl-[10%] lg:w-[600px]'>
                             <h2 className='productBold text-2xl pt-12'>Acquainted?</h2>
                             <p className='productregular text-lg pb-6'>Enter your details here and you will be in touch with one of our professionals in no time for an intake!</p>
@@ -55,7 +55,7 @@ export default function Startintake() {
                                     <input type='text' className='input-title' name='company_name' required placeholder='Company Name' />
                                 </div>
                                 <textarea className='input-textarea' required placeholder='Message' name="message" />
-                                <input type='submit' className='btn-submit' value="Send" />
+                                <input type='submit' className='btn-submit mb-12' value="Send" />
                             </form>
                         </div>
                         <div className='bg-grayes lg:pr-[10%]'>

@@ -2,20 +2,20 @@ import React from 'react'
 
 export default function Banner() {
     return (
-        <div>
-            <div className='container'>
-                <h2 className='pt-8 title-banner'>
+        <div className=''>
+            <div className='container h-screen !mt-28'>
+                <h2  data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="2000" className='pt-8 title-banner'>
                     Creative design <br />
                     & marketing agency
                 </h2>
-                <p className='banner-global'>
+                <p  data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="3000" className='banner-global'>
                     We partner with global startups and
                     established companies, to deliver
                     memorable brand identities and
                     digital experiences.
                 </p>
 
-                <div className='flex justify-between items-center py-10'>
+                <div data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="3000" className='flex justify-between items-center py-10'>
                     <a href='/contact' className='cursor-pointer'>
                         <button className='btn-lets cursor-pointer'>
 
