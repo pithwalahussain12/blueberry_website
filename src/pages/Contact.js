@@ -10,11 +10,11 @@ import Footer2 from '../component/footer2'
 
 export default function Contact() {
     return (
-        <div>
-            <Header />
+        <div className='app'>
+            {/* <Header /> */}
             <a href="mailto:creative@blueb.club">
 
-                <button className='btn-email'>
+                {/* <button data-fixed className='btn-email fixed'>
                     <a href="mailto:creative@blueb.club" className='!flex items-center'>
 
                         <svg width="10" height="10" className='mr-2' viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -23,7 +23,7 @@ export default function Contact() {
 
                         <label className='block'>creative@blueb.club</label>
                     </a>
-                </button>
+                </button> */}
             </a>
             <Transform />
             <Applysection />

@@ -2,15 +2,15 @@ import React from 'react'
 
 export default function Worksection() {
     return (
-        <div className='py-10 pt-28'>
+        <div className='py-[4vw] pt-[6vw]'>
             <div className='container'>
                 <div className='lg:flex block items-center justify-between'>
                     <div>
-                        <h2 className='text-4xl productBold'>Portfolio</h2>
+                        <h2 className='text-[2.2vw] productBold'>Portfolio</h2>
 
-                        <p className='pt-16'><span className='text-4xl productBold'>5+</span> <label className='productregular'>completed projects</label></p>
+                        <p className='pt-[2vw]'><span className='text-[2.2vw] productBold'>5+</span> <label className='productregular text-[0.8vw] '>completed projects</label></p>
 
-                        <div className='flex mt-4'>
+                        <div className='flex mt-[0.5vw]'>
                             <a href="https://www.behance.net/BlueberrysClub">
                                 <button className='btn-behance'>
                                     Behance
@@ -33,7 +33,7 @@ export default function Worksection() {
                         </div>
                     </div>
                     <div>
-                        <p className='w-[430px] productBold text-3xl'>
+                        <p className='w-[22.395833333333332vw] productBold text-[1.5vw]'>
                             Our works are a blend of
                             innovative thinking and practical
                             solutions, ensuring they are both

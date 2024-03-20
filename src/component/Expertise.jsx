@@ -2,157 +2,101 @@ import React from 'react'
 
 export default function Expertise() {
     return (
-        // <div className='py-16 relative'>
-        //     <div className='container'>
-        //         <h1 className='lg:text-8xl text-3xl productBold'>Our expertise in</h1>
-
-
-        //     </div>
-
-        //     <div className='mt-16 sectiom-onetwo lg:sticky lg:top-0 min-w-[50%] h-[200px] lg:min-h-screen '>
-        //         <section className=''>
-        //             <div className='flex items-center'>
-        //                 <div>
-        //                     <img className='h-[730px]' src='/assets/images/image-1.png' alt='' />
-        //                 </div>
-
-        //                 <div className='brand-identity-design w-[500px]'>
-        //                     <h2 className='productBold text-5xl mb-7'>Brand identity <br /> design</h2>
-        //                     <p className='productregular'>
-        //                         Key to standout success. We shape unique brand identities that last and resonate in dynamic evolved and competitive markets.
-        //                     </p>
-        //                 </div>
-
-        //             </div>
-        //         </section>
-
-        //         <section className=''>
-        //             <div className='flex items-center'>
-        //                 <div>
-        //                     <img className='h-[730px]' src='/assets/images/image-1.png' alt='' />
-        //                 </div>
-
-        //                 <div className='brand-identity-design w-[500px]'>
-        //                     <h2 className='productBold text-5xl mb-7'>UX strategy &
-        //                         <br /> web app design</h2>
-        //                     <p className='productregular'>
-        //                         Key to standout success. We shape unique brand identities that last and resonate in dynamic evolved and competitive markets.
-        //                     </p>
-        //                 </div>
-
-        //             </div>
-        //         </section>
-        //         <section className=''>
-        //             <div className='flex items-center'>
-        //                 <div>
-        //                     <img className='h-[730px]' src='/assets/images/image-1.png' alt='' />
-        //                 </div>
-
-        //                 <div className='brand-identity-design w-[500px]'>
-        //                     <h2 className='productBold text-5xl mb-7'>Product <br /> design</h2>
-        //                     <p className='productregular'>
-        //                         Key to standout success. We shape unique brand identities that last and resonate in dynamic evolved and competitive markets.
-        //                     </p>
-        //                 </div>
-
-        //             </div>
-        //         </section>
-        //         <section className=''>
-        //             <div className='flex items-center'>
-        //                 <div>
-        //                     <img className='h-[730px]' src='/assets/images/image-1.png' alt='' />
-        //                 </div>
-
-        //                 <div className='brand-identity-design w-[500px]'>
-        //                     <h2 className='productBold text-5xl mb-7'>Design <br /> maintenance</h2>
-        //                     <p className='productregular'>
-        //                         Key to standout success. We shape unique brand identities that last and resonate in dynamic evolved and competitive markets.
-        //                     </p>
-        //                 </div>
-
-        //             </div>
-        //         </section>
-
-        //     </div>
-        // </div>
 
         <div class="relative">
             <div className='container'>
-                <h1 className='lg:text-8xl text-3xl py-24 productBold'>Our expertise in</h1>
+                <h1 className='text-[6.3vw] py-[4.5vw] productBold'>Our expertise in</h1>
             </div>
-            <div class="sticky top-0 h-screen bg-white flex justify-start items-center">
+                <div className='brand-identity-design w-[31.25vw]'>
+                        <h2 className='productBold text-[4vw] leading-[4vw] mb-7'>Brand identity  design</h2>
+                        <p className='productregular text-[1vw]'>
+                            Key to standout success. We shape unique brand identities that last and resonate in dynamic evolved and competitive markets.
+                        </p>
+            </div>
+            <div data-sticky className="sticky top-0 h-screen bg-white w-1/2  flex justify-start items-center">
                 <div>
                     <section className=''>
                         <div className='flex items-center'>
                             <div>
-                                <img className='h-[730px]' src='/assets/images/image-1.png' alt='' />
+                                <img className='h-screen' src='/assets/images/image-1.png' alt='' />
                             </div>
 
-                            <div className='brand-identity-design w-[500px]'>
-                                <h2 className='productBold text-5xl mb-7'>Brand identity <br /> design</h2>
-                                <p className='productregular'>
+                            {/* <div className='brand-identity-design w-[31.25vw]'>
+                                <h2 className='productBold text-[4vw] leading-[4vw] mb-7'>Brand identity  design</h2>
+                                <p className='productregular text-[1vw]'>
                                     Key to standout success. We shape unique brand identities that last and resonate in dynamic evolved and competitive markets.
                                 </p>
-                            </div>
+                            </div> */}
 
                         </div>
                     </section>
                 </div>
             </div>
-            <div class="sticky top-0 h-screen bg-white flex justify-start items-center">
-                <section className=''>
-                    <div className='flex items-center'>
-                        <div>
-                            <img className='h-[730px]' src='/assets/images/p-2.png' alt='' />
-                        </div>
-
-                        <div className='brand-identity-design w-[500px]'>
-                            <h2 className='productBold text-5xl mb-7'>
-                                UX strategy <br /> web app design</h2>
-                            <p className='productregular'>
+    <div className='brand-identity-design w-[31.25vw]'>
+                             <h2 className='productBold text-[4vw] leading-[4vw] mb-7'>
+                                UX strategy web app design</h2>
+                            <p className='productregular text-[1vw]'>
                                 Key to standout success. We shape unique brand identities that last and resonate in dynamic evolved and competitive markets.
                             </p>
-                        </div>
-
-                    </div>
-                </section>
             </div>
 
-            <div class="sticky top-0 h-screen bg-white flex justify-start items-center">
-                <section className=''>
-                    <div className='flex items-center'>
-                        <div>
-                            <img className='h-[730px]' src='/assets/images/p-3.png' alt='' />
-                        </div>
+            <div data-sticky className="sticky top-0 h-screen bg-white w-1/2  flex justify-start items-center">
+                <div>
+                    <section className=''>
+                        <div className='flex items-center'>
+                            <div>
+                                <img className='h-screen' src='/assets/images/p-2.png' alt='' />
+                            </div>
 
-                        <div className='brand-identity-design w-[500px]'>
-                            <h2 className='productBold text-5xl mb-7'>Product <br /> design</h2>
-                            <p className='productregular'>
+                       
+                        </div>
+                    </section>
+                </div>
+            </div>
+              <div className='brand-identity-design w-[31.25vw]'>
+              <h2 className='productBold text-[4vw] leading-[4vw] mb-7'>Product <br /> design</h2>
+                            <p className='productregular text-[1vw]'>
                                 Key to standout success. We shape unique brand identities that last and resonate in dynamic evolved and competitive markets.
                             </p>
-                        </div>
+                            </div>
+            <div data-sticky className="sticky top-0 h-screen bg-white w-1/2  flex justify-start items-center">
+                <div>
+                    <section className=''>
+                        <div className='flex items-center'>
+                            <div>
+                                <img className='h-screen' src='/assets/images/p-3.png' alt='' />
+                            </div>
 
-                    </div>
-                </section>
+                          
+
+                        </div>
+                    </section>
+                </div>
             </div>
-
-            <div class="sticky top-0 h-screen bg-white flex justify-start items-center">
-                <section className=''>
-                    <div className='flex items-center'>
-                        <div>
-                            <img className='h-[730px]' src='/assets/images/p-4.png' alt='' />
-                        </div>
-
-                        <div className='brand-identity-design w-[500px]'>
-                            <h2 className='productBold text-5xl mb-7'>Design <br /> maintenance</h2>
-                            <p className='productregular'>
+            <div className='brand-identity-design w-[31.25vw]'>
+            <h2 className='productBold text-[4vw] leading-[4vw] mb-7'>Design <br /> maintenance</h2>
+                            <p className='productregular text-[1vw]'>
                                 Key to standout success. We shape unique brand identities that last and resonate in dynamic evolved and competitive markets.
                             </p>
-                        </div>
+                            </div>
+            <div data-sticky className="sticky top-0 h-screen bg-white w-1/2  flex justify-start items-center">
+                <div>
+                    <section className=''>
+                        <div className='flex items-center'>
+                            <div>
+                                <img className='h-screen' src='/assets/images/p-4.png' alt='' />
+                            </div>
 
-                    </div>
-                </section>
+                          
+
+                        </div>
+                    </section>
+                </div>
             </div>
+        
         </div>
+
+
+
     )
 }

@@ -3,16 +3,33 @@
   padding: 0;
 }
 
+/* #my-scrollbar {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+} */
+
+:root {
+  --cursor-color: #fff;
+}
+
 html {
   transition: all 500ms ease-in;
   /* scroll-snap-type: y proximity; */
 
 }
 
-/* 
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  /* font-size: 3.2vw; */
+
+}
+
 ::-webkit-scrollbar {
   display: none;
-} */
+}
 
 input:focus {
   outline: none;
@@ -45,32 +62,50 @@ input:focus {
 
 }
 
-.title-banner {
-  font-size: 120px;
-  font-family: Product-bold;
-  line-height: 132px;
+.project-card__heading {
+  font-family: 'Product-bold';
+  font-size: 2vw;
 }
 
-.banner-global {
-  max-width: 500px;
-  font-family: 'product-regular';
-  font-size: 28px;
-  line-height: 40px;
-  padding-top: 2rem;
+.title-banner {
+  font-size: 6vw;
+  font-family: Product-bold;
+  line-height: 6.6000000000000005vw;
+}
 
+/* @media (min-width: 1400px) {
+  .title-banner {
+    font-size: 160px;
+
+  }
+} */
+
+
+.banner-global {
+  max-width: 35vw;
+  font-family: 'product-regular';
+  font-size: 2vw;
+  line-height: 2.8vw;
+  padding-top: 1.6vw;
+
+}
+
+.text-zoomed {
+  font-size: 1.2vw;
 }
 
 button.btn-email a {
   background: #000000;
   color: #fff;
-  border-radius: 50px;
-  height: 50px;
-  padding: 0px 20px;
+  border-radius: 2.604vw;
+  height: 2.604vw;
+  padding: 0px 1.042vw;
   display: block;
-  line-height: 50px;
+  line-height: 2.5vv;
   font-family: 'product-regular';
   transition: all 500ms ease-in;
   border: 1px solid #000000;
+  font-size: 1vw;
 }
 
 .btn-email a:hover svg path {
@@ -83,8 +118,8 @@ button.btn-email a {
 
 .lorem-ipsum {
   font-family: product-regular;
-  font-size: 18px;
-  padding-top: 14px;
+  font-size: 1.3vw;
+  padding-top: 0.208vw;
 }
 
 .border-custom {
@@ -101,7 +136,7 @@ button.btn-email a {
 }
 
 .btn-lets svg {
-  margin-right: 10px;
+  margin-right: 0.521vw;
   position: relative;
   top: -5px;
 }
@@ -130,35 +165,40 @@ button.btn-email a {
 label.lab-work {
   font-family: 'product-regular';
   border-bottom: 1px solid #000;
-  padding-bottom: 12px;
+  padding-bottom: 0.5vw;
   cursor: pointer;
+  font-size: 2.5vh;
 }
 
 .input-title {
-  background: rgba(0, 0, 0, 0.05);
+  background: transparent;
   width: 100%;
   height: 60px;
-  padding-left: 30px;
+  padding-left: 0.208vw;
   margin-bottom: 1.5rem;
-  border-radius: 18px;
+  border-radius: 0px;
+  border-bottom: 1px solid #ccc;
   font-family: 'product-regular';
+
+
 }
 
 .input-textarea {
-  background: rgba(0, 0, 0, 0.05);
+  background: transparent;
   width: 100%;
-  height: 160px;
-  padding-top: 10px;
-  padding-left: 30px;
+  height: 8.333vw;
+  padding-top: 0.521vw;
+  padding-left: 0.208vw;
   margin-bottom: 1.5rem;
-  border-radius: 18px;
+  border-radius: 0px;
+  border-bottom: 1px solid #ccc;
   font-family: 'product-regular';
 }
 
 .btn-submit {
   background: rgba(0, 0, 0, 1);
   height: 70px;
-  border-radius: 20px;
+  border-radius: 1.042vw;
   color: #fff;
   font-family: 'product-regular';
   padding: 0 2.3rem;
@@ -170,12 +210,14 @@ label.lab-work {
   display: flex;
   align-items: center;
   border: 1px solid #000000;
-  height: 40px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  border-radius: 20px;
-  margin-top: 1rem;
-  margin-right: 20px;
+  height: 2vw;
+  padding-left: 0.7vw;
+  padding-right: 0.7vw;
+  border-radius: 0.9vw;
+  margin-top: 0.5vw;
+  margin-right: 0.9vw;
+
+  font-size: 0.8vw;
   font-family: 'product-regular';
   transition: all 500ms ease-in;
 
@@ -212,7 +254,7 @@ label.lab-work {
   .btn-email {
     position: fixed;
     right: 12px;
-    bottom: 50px;
+    bottom: 2.604vw;
 
   }
 }
@@ -237,33 +279,33 @@ button.btn-email a:hover {
 
 .newsletter input {
   background: rgba(243, 243, 243, 1);
-  height: 50px;
+  height: 2.604vw;
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
-  margin-top: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-top: 0.521vw;
+  padding-left: 1.042vw;
+  padding-right: 1.042vw;
 }
 
 .newsletter button {
   background: rgba(0, 0, 0, 1);
-  height: 50px;
+  height: 2.604vw;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
   color: #fff;
   font-family: product-regular;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 1.042vw;
+  padding-right: 1.042vw;
 
 }
 
-.list-section li {
-  display: inline-flex;
-  align-items: center;
-  font-size: 16px;
+.list-section {
+  /* display: inline-flex;
+  align-items: center; */
+  font-size: 1.1rem;
   font-family: product-regular;
   color: #000;
-  margin-right: 20px;
+  /* margin-right: 1.042vw; */
 
 }
 
@@ -303,9 +345,13 @@ button.btn-email a:hover {
 .brand-identity-design {
   background: #fff;
   padding: 40px;
-  border-radius: 10px;
-  position: relative;
-  left: -130px;
+  border-radius: 0.521vw;
+  padding-left: 2%;
+  float: right;
+  margin-right: 16vw;
+  margin-top: 20vw;
+  /* position: relative;
+  left: -130px; */
 }
 
 ul.list-cofee {
@@ -317,7 +363,7 @@ ul.list-cofee {
 
 ul.list-cofee li {
   display: inline-block;
-  width: 140px;
+  width: 7.292vw;
   text-align: center;
 
 }
@@ -328,7 +374,7 @@ ul.list-cofee li img {
 
 ul.list-cofee label {
   margin-right: 39px;
-  margin-bottom: 10px;
+  margin-bottom: 0.521vw;
   display: block;
 }
 
@@ -342,19 +388,19 @@ ul.list-cofee label {
   font-family: 'product-regular';
   color: #fff;
   border: 1px solid #fff;
-  border-radius: 30px;
-  height: 40px;
+  border-radius: 1.8vw;
+  height: 2.6vw;
   /* display: block; */
   /* line-height: 40px; */
   text-align: center;
-  margin-bottom: 20px;
-  padding: 10px;
+  margin-bottom: 1.042vw;
+  padding: 0.521vw;
   display: inline-block;
-  font-size: 16px;
-  line-height: 18px;
-  padding: 10px 20px;
+  font-size: 0.9vw;
+  line-height: 0.8vw;
+  padding: 0.8vw 1.8vw;
   transition: all 500ms ease;
-  /* max-width: 150px; */
+  /* max-width: 12.604vw; */
 }
 
 .social-list-1 li a:hover {
@@ -365,9 +411,9 @@ ul.list-cofee label {
 }
 
 .email-type {
-  height: 50px;
+  height: 2.604vw;
   width: 100%;
-  /* padding-left: 20px; */
+  /* padding-left: 1.042vw; */
   font-family: 'Product-bold';
   max-width: 500px;
   border-bottom: 1px solid #fff;
@@ -383,11 +429,12 @@ ul.list-cofee label {
 
 .list-soci-sec li a {
   font-family: 'product-regular';
-  line-height: 22px;
+  line-height: 1.8vw;
   transition: all 500ms ease;
   padding-bottom: 5px;
+  font-size: 1vw;
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 0.521vw;
 
 }
 
@@ -406,14 +453,14 @@ ul.list-cofee label {
 
 .value-bg {
   border-bottom: 2px solid #fff;
-  width: 340px;
+  width: 28vw;
   padding-bottom: 8px;
 }
 
 .bg-grayes {
   background: rgba(243, 243, 243, 1);
-  padding: 20px;
-  padding: 20px 40px;
+  padding: 1.042vw;
+  padding: 1.042vw 40px;
 }
 
 #mc_embed_signup form {
@@ -426,4 +473,212 @@ ul.list-cofee label {
   border: none;
   border-bottom: 2px solid #fff;
   border-radius: 0 I !important;
+}
+
+.header-blurry {
+  background: hsla(0, 0%, 100%, .85);
+  border-radius: 0;
+  backdrop-filter: blur(19.7px);
+  -webkit-backdrop-filter: blur(8.7px);
+  z-index: 9999999999999999999999999999999999999999999999999999999999999999999999999999999;
+  /* height: 2vw; */
+}
+
+.app {
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* .scrollbar-track {
+  background-color: transparent !important;
+}
+
+.scrollbar-track-y {
+  width: 12px !important;
+}
+
+
+.scrollbar-thumb {
+  width: 12px !important;
+  background-color: black !important;
+  border-radius: 0 !important;
+} */
+
+.pl-custom {
+  padding-left: 10%;
+}
+
+
+/*  */
+
+.projects-catalog {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-card__filter {
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, .5));
+  bottom: 0;
+  height: 40%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.project-card__info {
+  bottom: 6.15vw;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.project-card__info {
+  bottom: 3.1vw;
+}
+
+.project-card__info-main {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.project-card__info-main {
+  align-items: flex-end;
+  margin-bottom: 0.95vw;
+}
+
+.project-label-pill {
+  padding: 0.48vw 1.9vw;
+}
+
+.project-label-pill {
+  align-items: center;
+  border: 1px solid hsla(0, 0%, 100%, .5);
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  padding: 2.05vw 4.1vw;
+}
+
+.project-card__info-footer {
+  align-items: flex-end;
+  display: flex;
+}
+
+.project-card__desc {
+  max-width: 23.21vw;
+}
+
+.project-card__categories {
+  column-gap: 0.95vw;
+  flex-wrap: wrap;
+  row-gap: 0.95vw;
+}
+
+.project-card__categories {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 50%;
+}
+
+.project-label-pill {
+  padding: 0.48vw 1.9vw;
+}
+
+.project-label-pill {
+  align-items: center;
+  border: 1px solid hsla(0, 0%, 100%, .5);
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  padding: 1vw 3.1vw;
+}
+
+.bg-image-blue {
+  background-image: url('./assets/images/gradient-image.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+button.btn-linkdein {
+  border: 1px solid rgba(0, 119, 181, 1);
+  display: flex;
+  height: 3.604vw;
+  align-items: center;
+  padding: 0px 15px;
+  font-family: 'product-regular';
+  color: rgba(0, 119, 181, 1);
+}
+
+button.btn-linkdein img {
+  margin-right: 0.521vw;
+}
+
+.btn-color {
+  color: #000 !important;
+  border-color: #000 !important;
+}
+
+.project-card_hover .project-card__img {
+  transition: transform 1.24s cubic-bezier(.19, 1, .22, 1);
+  overflow: hidden;
+}
+
+.project-card_hover:hover .project-card__img {
+  transform: scale(1.034) !important
+}
+
+.project-card__img img {
+  height: 50vw;
+  object-fit: cover;
+}
+
+.list_under li {
+  line-height: 2.7vw;
+  font-size: 1.3vw;
+}
+
+
+.left-section {
+  position: -webkit-sticky;
+  /* For Safari */
+  position: sticky;
+  top: 0;
+  flex: 0 0 auto;
+  /* Prevent flex resizing */
+  width: 800px;
+  /* Adjust width as needed */
+}
+
+.right-section {
+  flex: 1;
+  /* Allow flex resizing */
+  overflow-y: auto;
+  /* Enable vertical scrolling */
+}
+
+input:focus {
+  outline: none;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+input:focus {
+  outline: none;
+  /* border: 1px solid #ccc; */
+}
+
+textarea:focus-visible {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
 }

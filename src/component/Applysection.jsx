@@ -5,7 +5,7 @@ export default function Applysection() {
         <div>
             <div className='container pt-24 pb-24' style={{ borderBottom: '1px solid #000' }}>
                 <div>
-                    <h3 className='text-3xl productBold w-[500px] pb-6'>
+                    <h3 className='text-[2.8vw] productBold w-[26vw] pb-6'>
                         New Business
                     </h3>
 
@@ -25,10 +25,10 @@ export default function Applysection() {
                 </div>
             </div>
 
-            <div className='container pt-20'>
+            <div className='container pt-[3vw]'>
                 <div>
-                    <p className='productBold pb-2'>Careers</p>
-                    <h3 className='text-3xl productBold w-[500px] pb-6'>
+                    <p className='productBold text-[1vw] pb-2'>Careers</p>
+                    <h3 className='text-[1.6vw] productBold w-[26vw] pb-6'>
                         We're always looking for diverse, talented, and passionate artists to join the team.
                     </h3>
 

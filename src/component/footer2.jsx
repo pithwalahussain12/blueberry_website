@@ -3,29 +3,29 @@ import SubscribeForm from './subscribeForm'
 
 export default function Footer2() {
     return (
-        <div className='footer-bg pt-10 relative'>
+        <div className='footer-bg pt-[3vw] relative'>
             <div className='container'>
                 <div>
                     <div className='lg:grid block lg:grid-cols-3'>
                         <div className='col-span-2'>
-                            <p className='productBold text-xl'>Let's Talk</p>
-                            <h1 className='productBold text-4xl pt-4 value-bg'>
+                            <p className='productBold text-[1.2vw]'>Let's Talk</p>
+                            <h1 className='productBold text-[3vw] pt-[0.5vw] value-bg'>
                                 <a href="mailto:creative@blueb.club">
                                     creative@blueb.club
                                 </a>
                             </h1>
 
-                            <div className='py-14'>
-                                <h3 className='productregular'>Job Applications
+                            <div className='py-[3vw]'>
+                                <h3 className='productregular text-[1.5vw]'>Job Applications
                                 </h3>
-                                <p className='productBold'>
+                                <p className='productBold text-[1vw]'>
                                     <a href="mailto:enquiry@blueb.club" className='cursor-pointer'>
                                         enquiry@blueb.club
                                     </a>
                                 </p>
                             </div>
                             <div>
-                                <h3 className='productBold text-xl'>Join us and Subscribe to our Newsletter!</h3>
+                                <h3 className='productBold text-[1vw]'>Join us and Subscribe to our Newsletter!</h3>
                                 {/* <form className='relative lg:w-[500px]'>
                                     <input type='email' className='email-type' placeholder='Email Address' />
                                     <div className='absolute top-6 right-2'>
@@ -112,7 +112,7 @@ export default function Footer2() {
 
                             </div>
                             <div>
-                                <h1 className='productBold absolute bottom-0 lg:text-[200px] mt-10'>Blueberry.</h1>
+                                <h1 className='productBold absolute bottom-0 lg:text-[15vw] mt-[2.1vw]'>Blueberry.</h1>
                             </div>
                         </div>
 
@@ -130,7 +130,7 @@ export default function Footer2() {
 
                                         </li>
                                         <li>
-                                            <a href='https://twitter.com/BlueberrysClub'>Twitter</a>
+                                            <a href='https://twitter.com/BlueberrysClub'>X</a>
                                         </li>
                                         <li>
                                             <a href='https://www.linkedin.com/company/blueberrys-club

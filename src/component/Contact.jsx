@@ -23,15 +23,15 @@ export default function Contact() {
             );
     };
     return (
-        <div className='py-20'>
+        <div className='py-[5vw]'>
             <div className='container'>
                 <div className='lg:grid block grid-cols-2 gap-4'>
                     <div>
-                        <h1 className='text-6xl productBold'>
+                        <h1 className='text-[3vw] leading-[3.3vw] productBold'>
                             We would love to <br /> hear from you.
                         </h1>
-                        <p className='pt-6 productregular text-lg w-96'>
-                            Feel free to reach out if you want to Collaborate
+                        <p className='pt-6 productregular text-[1vw] w-[20vw]'>
+                            Feel free to reach out if y`ou want to Collaborate
                             with us, or simply have a chat.
                         </p>
                     </div>
@@ -45,21 +45,7 @@ export default function Contact() {
                             <textarea className='input-textarea' required placeholder='Message' name="message" />
                             <input type='submit' className='btn-submit' value="Send" />
                         </form>
-                        {/* <form>
-                            <div>
-                                <input type='text' className='input-title' required placeholder='Full name' />
-                            </div>
-                            <div>
-                                <input type='email' className='input-title' required placeholder='Email address' />
-                            </div>
-                          
-                            <div>
-                                <textarea type='text' className='input-textarea' required placeholder='Message'></textarea>
-                            </div>
-                            <div>
-                                <button type='submit' className='btn-submit'>Submit</button>
-                            </div>
-                        </form> */}
+      
                     </div>
                 </div>
             </div>
