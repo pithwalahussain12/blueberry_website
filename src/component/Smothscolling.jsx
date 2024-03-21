@@ -74,7 +74,7 @@ const Scroll = () => {
         <div className='flex justify-between items-center list-section'>
           {/* <div className='logo-main py-4 ml-2'> */}
           <a href='/' className=''>
-            {/* <img src='/assets/images/logo.svg' className='h-[3.3vw]' alt='' /> */}
+            <img src='/assets/images/logo.svg' className='h-[3.3vw]' alt='' />
           </a>
 
           <a href='/contact' className='text-zoomed'>
@@ -110,35 +110,20 @@ const Scroll = () => {
       </div>
       {/* </div> */}
       <div onMouseMove={handleMouseMove}>
-      {/* <AnimatedCursor
+      <AnimatedCursor
         color={cursorColor}
         innerSize={16}
         outerSize={8}
         trailingSpeed={10}
-       
+        outerAlpha={0.2}
+        innerScale={0.7}
         outerScale={9}
         blendMode="difference" 
         hasBlendMode={true}
         clickables={['a', 'button']}
-      /> */}
+      />
       {/* Your other components */}
     </div>
-    <AnimatedCursor
-          color="0,0,0"
-          innerSize={16}
-          outerSize={8}
-          outerAlpha={0.2}
-        innerScale={0.7}
-          trailingSpeed={10}
-          hasBlendMode={true}
-          outerStyle={{
-            mixBlendMode: 'exclusion'
-          }}
-          innerStyle={{
-            backgroundColor: 'var(--cursor-color)',
-            mixBlendMode: 'exclusion'
-          }}
-        />
 
 
     </header>
