@@ -3,7 +3,7 @@ import SubscribeForm from './subscribeForm'
 
 export default function Footer2() {
     return (
-        <div className='footer-bg pt-[3vw] relative'>
+        <div className='footer-bg  background-color pt-[3vw] relative'>
             <div className='container'>
                 <div>
                     <div className='lg:grid block lg:grid-cols-3'>

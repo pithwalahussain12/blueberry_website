@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useState,  useRef } from 'react';
 import Scrollbar from 'smooth-scrollbar';
 import OverscrollPlugin from 'smooth-scrollbar/plugins/overscroll';
 import AnimatedCursor from 'react-animated-cursor'; // Import AnimatedCursor library
@@ -6,6 +6,7 @@ import AnimatedCursor from 'react-animated-cursor'; // Import AnimatedCursor lib
 
 const Scroll = () => {
   // const headerRef = useRef(null);
+  const [cursorColor, setCursorColor] = useState('0,0,0'); // Initial cursor color
 
   useEffect(() => {
     const bodyScrollBar = Scrollbar.init(document.body, {
@@ -47,13 +48,33 @@ const Scroll = () => {
     };
   }, []);
 
+  
+
+  // Function to handle mouse move event
+  const handleMouseMove = (event) => {
+    const element = document.elementFromPoint(event.clientX, event.clientY); // Get the element at mouse position
+    const backgroundColor = getComputedStyle(element).getPropertyValue('background-color'); // Get background color of the element
+    const rgb = backgroundColor.match(/\d+/g); // Extract RGB values
+
+    if (rgb) {
+      const averageColor = (parseInt(rgb[0]) + parseInt(rgb[1]) + parseInt(rgb[2])) / 3; // Calculate average color value
+
+      // Determine whether to set cursor color to white or black based on average color value
+      if (averageColor > 128) {
+        setCursorColor('0,0,0'); // Set cursor color to black if average color is light
+      } else {
+        setCursorColor('255,255,255'); // Set cursor color to white if average color is dark
+      }
+    }
+  };
+
   return (
     <header data-fixed className='header-blurry py-[0.8vw] fixed top-0 left-0 right-0 w-full'>
       <div className='container'>
         <div className='flex justify-between items-center list-section'>
           {/* <div className='logo-main py-4 ml-2'> */}
           <a href='/' className=''>
-            <img src='/assets/images/logo.svg' className='h-[3.3vw]' alt='' />
+            {/* <img src='/assets/images/logo.svg' className='h-[3.3vw]' alt='' /> */}
           </a>
 
           <a href='/contact' className='text-zoomed'>
@@ -63,6 +84,9 @@ const Scroll = () => {
           <a href='/expertises' className='text-zoomed'>
             Expertise
           </a>
+
+          {/*  */}
+        
 
           <a href='/portfolios' className='text-zoomed'>
             Portfolio
@@ -85,19 +109,37 @@ const Scroll = () => {
 
       </div>
       {/* </div> */}
-      <AnimatedCursor // Add AnimatedCursor component
+      <div onMouseMove={handleMouseMove}>
+      {/* <AnimatedCursor
+        color={cursorColor}
         innerSize={16}
         outerSize={8}
         trailingSpeed={10}
-        color='0, 0, 0'
-        outerAlpha={0.2}
-        innerScale={0.7}
+       
         outerScale={9}
-        clickables={[
-          'a',
-          'button',
-        ]}
-      />
+        blendMode="difference" 
+        hasBlendMode={true}
+        clickables={['a', 'button']}
+      /> */}
+      {/* Your other components */}
+    </div>
+    <AnimatedCursor
+          color="0,0,0"
+          innerSize={16}
+          outerSize={8}
+          outerAlpha={0.2}
+        innerScale={0.7}
+          trailingSpeed={10}
+          hasBlendMode={true}
+          outerStyle={{
+            mixBlendMode: 'exclusion'
+          }}
+          innerStyle={{
+            backgroundColor: 'var(--cursor-color)',
+            mixBlendMode: 'exclusion'
+          }}
+        />
+
 
     </header>
 
