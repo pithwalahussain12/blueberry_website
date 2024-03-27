@@ -50,23 +50,7 @@ const Scroll = () => {
 
   
 
-  // Function to handle mouse move event
-  const handleMouseMove = (event) => {
-    const element = document.elementFromPoint(event.clientX, event.clientY); // Get the element at mouse position
-    const backgroundColor = getComputedStyle(element).getPropertyValue('background-color'); // Get background color of the element
-    const rgb = backgroundColor.match(/\d+/g); // Extract RGB values
 
-    if (rgb) {
-      const averageColor = (parseInt(rgb[0]) + parseInt(rgb[1]) + parseInt(rgb[2])) / 3; // Calculate average color value
-
-      // Determine whether to set cursor color to white or black based on average color value
-      if (averageColor > 128) {
-        setCursorColor('0,0,0'); // Set cursor color to black if average color is light
-      } else {
-        setCursorColor('255,255,255'); // Set cursor color to white if average color is dark
-      }
-    }
-  };
 
   return (
     <header data-fixed className='header-blurry py-[0.8vw] fixed top-0 left-0 right-0 w-full'>
@@ -109,7 +93,7 @@ const Scroll = () => {
 
       </div>
       {/* </div> */}
-      <div onMouseMove={handleMouseMove}>
+     
       <AnimatedCursor
         color={cursorColor}
         innerSize={16}
@@ -118,12 +102,23 @@ const Scroll = () => {
         outerAlpha={0.2}
         innerScale={0.7}
         outerScale={9}
-        blendMode="difference" 
-        hasBlendMode={true}
+        outerStyle={{
+          mixBlendMode: 'exclusion'
+        }}
         clickables={['a', 'button']}
       />
-      {/* Your other components */}
-    </div>
+
+{/* <AnimatedCursor
+  color="#fff"
+  innerSize={8}
+  outerSize={35}
+  innerScale={1}
+  outerScale={1.7}
+  outerAlpha={0}
+  outerStyle={{
+    mixBlendMode: 'exclusion'
+  }}
+/> */}
 
 
     </header>
