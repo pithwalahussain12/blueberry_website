@@ -29,49 +29,29 @@ function App() {
     // Simulate page loading delay
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // Simulating a 2-second loading time
+    }, 2500); // Simulating a 2-second loading time
 
     // Cleanup function to clear the timer
     return () => clearTimeout(timer);
 
   }, []); // Empty dependency array ensures effect runs only once
   // Scroll()
-
-  useEffect(() => {
-    Aos.init({
-      offset: 200,
-      duration: 600,
-      easing: 'ease-in-sine',
-      // delay: 100,
-    });
-  }, [])
-
-
   return (
     <div>
-      <Scroll />
-
       {loading ? (
         <Loader />
-      ) : (
-        <div className="content">
-          {/* Render your main content here */}
-          <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path='start' element={<Startintake />} />
-        <Route path='expertises' element={<ExpertisePage />} />
-        <Route path='/portfolios' element={<Portfolios />} />
-      </Routes>
-        </div>
+        ) : (
+          <>
+          <Scroll />
+            <Routes>
+              <Route exact path="/" element={<Home />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path='start' element={<Startintake />} />
+              <Route path='expertises' element={<ExpertisePage />} />
+              <Route path='/portfolios' element={<Portfolios />} />
+            </Routes>
+        </>
       )}
-
-   
-
-
-
-
-
     </div>
   );
 }

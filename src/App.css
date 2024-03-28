@@ -3,15 +3,13 @@
   padding: 0;
 }
 :root {
-  --cursor-color: #000;
+  --cursor-color: #fff;
 }
-html {
-  --cursor-color: #000
-}
-
-html.dark-mode {
+/* html {
   --cursor-color: #fff
-}
+} */
+
+
 /* #my-scrollbar {
   width: 100%;
   height: 100%;
