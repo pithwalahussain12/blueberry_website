@@ -96,25 +96,7 @@ const Scroll = () => {
      
 
 
-      <AnimatedCursor
-        color="255,255,255"
-        innerSize={14}
-        outerSize={35}
-        innerScale={1}
-        outerScale={2}
-        outerAlpha={1}
-        hasBlendMode={true}
-        outerStyle={{
-          mixBlendMode: 'exclusion'
-        }}
-        innerStyle={{
-          backgroundColor: 'var(--cursor-color)',
-          mixBlendMode: 'exclusion'
-        }}
-        data-fixed="true"
-        className="fixed" // Adding the class for fixed positioning
 
-      />
 
     </header>
 
