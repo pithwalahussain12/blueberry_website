@@ -43,9 +43,9 @@ export default function Startintake() {
             </a>
             <div className='mt-20'>
                 <div className=''>
-                    <div className='grid grid-cols-2 gap-20'>
-                        <div className='lg:pl-[10%] lg:w-[600px]'>
-                            <h2 className='productBold text-2xl pt-12'>Acquainted?</h2>
+                    <div className='lg:grid lg:grid-cols-2 gap-20'>
+                        <div className='lg:p-0 lg:pl-[10%] lg:w-[600px] p-8'>
+                            <h2 className='productBold text-2xl lg:pt-12'>Acquainted?</h2>
                             <p className='productregular text-lg pb-6'>Enter your details here and you will be in touch with one of our professionals in no time for an intake!</p>
 
                             <form ref={form} onSubmit={sendEmail}>
@@ -59,7 +59,7 @@ export default function Startintake() {
                             </form>
                         </div>
                         <div className='bg-grayes lg:pr-[10%]'>
-                            <h2 className='productBold text-2xl pt-12'>What do you like to drink?</h2>
+                            <h2 className='productBold text-2xl lg:pt-12 pt-4'>What do you like to drink?</h2>
                             <p className='productregular text-lg pb-6'>The difference is in small details.</p>
 
                             <ul className='list-cofee'>

@@ -28,7 +28,7 @@ export default function Collab() {
             <div className=''>
                 <div className=''>
                     <div className=''>
-                        <div className='grid grid-cols-2 gap-20'>
+                        <div className='lg:grid lg:grid-cols-2 gap-20'>
                             <div className='bg-grayes pl-custom py-8'>
                                 <h2 className='productBold text-2xl pt-12'>Let’s collab!</h2>
                                 <p className='productregular text-lg pb-6'>Share your details, and let's explore how we can elevate your digital journey together.</p>
@@ -45,17 +45,17 @@ export default function Collab() {
 
 
                             </div>
-                            <div className='py-8'>
+                            <div className='lg:py-8 p-8 lg:p-0'>
 
                                 <h2 className='productBold text-2xl pt-12'>Want to app, call or email directly?</h2>
                                 <p className='productregular text-lg pb-6'>I’ll really happy to answer your all questions.</p>
 
 
-                                <div className='flex items-center pt-4'>
+                                <div className='lg:flex items-center pt-4'>
                                     <div>
                                         <img src='/assets/images/profile.png' className='h-40' alt='' />
                                     </div>
-                                    <div className='pl-8'>
+                                    <div className='lg:pl-8'>
                                         <h3 className='productBold text-2xl'>Krishna Agrawal</h3>
                                         <p className='productregular text-xl'>Founder</p>
 
@@ -81,7 +81,7 @@ export default function Collab() {
                                 </div>
 
 
-                                <div className='pt-20'>
+                                <div className='lg:pt-20'>
                                     <h2 className='productBold text-3xl pt-12'>View our work here</h2>
                                     <div className='flex mt-2'>
                                         <a href="https://www.behance.net/BlueberrysClub">

@@ -6,9 +6,9 @@ export default function Worksection() {
             <div className='container'>
                 <div className='lg:flex block items-center justify-between'>
                     <div>
-                        <h2 className='text-[2.2vw] productBold'>Portfolio</h2>
+                        <h2 className='text-[2.2vw] productBold title-port'>Portfolio</h2>
 
-                        <p className='pt-[2vw]'><span className='text-[2.2vw] productBold'>5+</span> <label className='productregular text-[0.8vw] '>completed projects</label></p>
+                        <p className='pt-[2vw] para-setting'><span className='text-[2.2vw] productBold'>5+</span> <label className='productregular text-[0.8vw] '>completed projects</label></p>
 
                         <div className='flex mt-[0.5vw]'>
                             <a href="https://www.behance.net/BlueberrysClub">
@@ -33,7 +33,7 @@ export default function Worksection() {
                         </div>
                     </div>
                     <div>
-                        <p className='w-[22.395833333333332vw] productBold text-[1.5vw]'>
+                        <p className='w-[22.395833333333332vw] productBold text-[1.5vw] para-subhead'>
                             Our works are a blend of
                             innovative thinking and practical
                             solutions, ensuring they are both

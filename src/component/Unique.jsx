@@ -6,11 +6,11 @@ export default function Unique() {
             <div className='container' style={{ borderBottom: '1px solid #000000', paddingBottom: '5rem' }}>
                 <div className='lg:grid block grid-cols-2 gap'>
                     <div>
-                        <video loop autoPlay muted className='h-full  p-20 pl-0 rounded-2xl w-full'>
+                        <video loop autoPlay muted className='h-full lg:p-20 p-8 pl-0 rounded-2xl w-full'>
                             <source src='/assets/images/NewVideo.mp4' type="video/mp4"></source>
                         </video>
                     </div>
-                    <div className='flex items-center'>
+                    <div className='flex items-center unique-title'>
                         <div>
                             <h2 className='text-[4vw] leading-[4vw] productBold mb-8'>A unique <br />
                                 partnership.</h2>

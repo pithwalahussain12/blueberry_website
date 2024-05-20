@@ -1,22 +1,23 @@
 * {
   margin: 0;
   padding: 0;
+  /* overflow-x: hidden; */
 }
+
 :root {
   --cursor-color: #fff;
 }
-/* html {
-  --cursor-color: #fff
-} */
 
+html {
+  overflow-x: hidden;
 
-/* #my-scrollbar {
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-} */
+}
 
-.loader{
+body {
+  overflow-x: hidden;
+}
+
+.loader {
   position: fixed;
   top: 0;
   left: 0;
@@ -89,6 +90,12 @@ input:focus {
   font-family: Product-bold;
   line-height: 6.6000000000000005vw;
 }
+
+/* @media(max-width: 767px) {
+  .title-banner {
+    font-size: 2vw;
+  }
+} */
 
 /* @media (min-width: 1400px) {
   .title-banner {
@@ -261,7 +268,116 @@ label.lab-work {
 @media(max-width: 767px) {
   .title-banner {
     font-size: 40px;
-    line-height: 60px;
+    line-height: 45px;
+  }
+
+  .banner-global {
+    max-width: 100%;
+    line-height: 25px;
+    font-size: 18px;
+    padding-top: 15px;
+  }
+
+  label.lab-work {
+    font-size: 20px;
+  }
+
+  .btn-lets svg {
+    height: 12px;
+    margin-top: 8px;
+    margin-right: 7px;
+  }
+
+  .contact-mobile h1 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .contact-mobile p {
+    font-size: 16px;
+    width: 100%;
+    padding-top: 9px;
+    padding-bottom: 14px;
+  }
+
+  .input-textarea {
+    height: 120px;
+  }
+
+  .btn-submit {
+    height: 50px;
+  }
+
+  .unique-title h2 {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 1rem;
+  }
+
+  .unique-title p {
+    font-size: 16px;
+    line-height: 25px;
+    width: 100%;
+  }
+
+  .unique-work-2 img {
+    height: 300px;
+  }
+
+  .want-more h1 {
+    padding-top: 16px;
+  }
+
+  .want-more h1 {
+    font-size: 22px;
+  }
+
+  .want-more svg {
+    height: 15px;
+  }
+
+  .para-subhead {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .title-work {
+    font-size: 32px;
+  }
+
+  .title-port {
+    font-size: 28px;
+  }
+
+  .para-setting span {
+    font-size: 30px;
+  }
+
+  .para-setting label {
+    font-size: 16px;
+  }
+
+  .btn-behance {
+    height: 35px;
+    width: 100%;
+    margin-right: 10px;
+    margin-bottom: 1rem;
+    font-size: 18px;
+    padding-left: 5px;
+    border-radius: 40px;
+  }
+
+  .border-custom {
+    border: none;
+  }
+
+  .lorem-ipsum {
+    font-size: 16px;
+  }
+
+  .social-list-1 li a {
+    font-size: 16px;
+    height: 40px;
   }
 
   .container {
@@ -321,7 +437,7 @@ button.btn-email a:hover {
   align-items: center; */
   font-size: 1.1rem;
   font-family: product-regular;
-  
+
   color: #000;
   /* margin-right: 1.042vw; */
 
@@ -699,4 +815,147 @@ textarea:focus-visible {
   border: none;
   border-bottom: 1px solid #ccc;
   outline: none;
+}
+
+@media(max-width: 767px) {
+  .social-list-1 li a {
+    font-size: 16px;
+    height: 40px;
+    border-radius: 40px;
+    line-height: 12px;
+    padding: 0.8rem 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .list-soci-sec li a {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 0.8rem;
+
+  }
+
+  .talk-title {
+    font-size: 20px;
+    padding-top: 1rem;
+  }
+
+  .email-text {
+    font-size: 26px;
+  }
+
+  .value-bg {
+    width: 80%;
+  }
+
+  .text-job {
+    font-size: 20px;
+    padding-top: 1rem;
+  }
+
+  .email-2 {
+    font-size: 16px;
+    padding-bottom: 1rem;
+  }
+
+  #mc_embed_signup .mc-field-group input {
+    height: 40px;
+  }
+
+  .social-list-1 {
+    margin-top: 3rem;
+  }
+
+  .list-soci-sec {
+    margin-top: 3rem;
+  }
+
+  .blue-foot {
+    font-size: 3rem;
+  }
+
+  .text-your {
+    font-size: 3.4rem;
+    line-height: 60px;
+    margin-top: 3rem;
+  }
+
+  .text-para {
+    font-size: 18px;
+  }
+
+  .new-business {
+    font-size: 20px;
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  .carrer-p p {
+    font-size: 18px;
+    margin-top: 2rem;
+  }
+
+  .b-bottom-0 {
+    border-bottom: 0 !important;
+  }
+
+  .carrer-p {
+    margin-bottom: 2rem;
+  }
+
+  .carrer-p h3 {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .btn-linkdein {
+    height: 50px !important;
+  }
+
+  button.btn-linkdein img {
+    margin-right: 9px;
+  }
+
+  ul.list-cofee li {
+    width: 100px;
+    text-align: center;
+  }
+
+  ul.list-cofee label {
+    margin-right: 0;
+  }
+}
+
+
+@media(max-width: 767px) {
+  .mobile-hidden {
+    display: none;
+  }
+
+
+  .text-zoomed {
+    font-size: 1.2rem;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Product-bold';
+  }
+
+
+  .brand-identity-design h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    line-height: 27px;
+  }
+
+  .brand-identity-design p {
+    font-size: 14px;
+  }
+
+  .brand-identity-design {
+    margin-top: 0;
+  }
+
+  .brand-identity-design img {
+    width: 100%;
+  }
 }

@@ -24,10 +24,10 @@ export default function Contact() {
     };
     return (
         <div className='py-[5vw]'>
-            <div className='container'>
+            <div className='container contact-mobile'>
                 <div className='lg:grid block grid-cols-2 gap-4'>
                     <div>
-                        <h1 className='text-[3vw] leading-[3.3vw] productBold'>
+                        <h1 className='text-[3vw] leading-[3.3vw] productBold contact-mobile'>
                             We would love to <br /> hear from you.
                         </h1>
                         <p className='pt-6 productregular text-[1vw] w-[20vw]'>
@@ -45,7 +45,7 @@ export default function Contact() {
                             <textarea className='input-textarea' required placeholder='Message' name="message" />
                             <input type='submit' className='btn-submit' value="Send" />
                         </form>
-      
+
                     </div>
                 </div>
             </div>

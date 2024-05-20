@@ -4,7 +4,7 @@ export default function Banner() {
     return (
         <div className=''>
 
-            <div className='container h-screen !mt-[6.400000000000002vw]'>
+            <div className='container lg:h-screen !pt-10 !pb-20 lg:py-0 !mt-[6.400000000000002vw]'>
 
                 <h2 className='pt-[1.5vw]  title-banner'>
                     Creative design <br />

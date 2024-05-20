@@ -3,9 +3,9 @@ import React from 'react'
 export default function Applysection() {
     return (
         <div>
-            <div className='container pt-24 pb-24' style={{ borderBottom: '1px solid #000' }}>
+            <div className='container b-bottom-0 pt-24 pb-24' style={{ borderBottom: '1px solid #000' }}>
                 <div>
-                    <h3 className='text-[2.8vw] productBold w-[26vw] pb-6'>
+                    <h3 className='text-[2.8vw] productBold w-[26vw] new-business pb-6'>
                         New Business
                     </h3>
 
@@ -26,7 +26,7 @@ export default function Applysection() {
             </div>
 
             <div className='container pt-[3vw]'>
-                <div>
+                <div className='carrer-p'>
                     <p className='productBold text-[1vw] pb-2'>Careers</p>
                     <h3 className='text-[1.6vw] productBold w-[26vw] pb-6'>
                         We're always looking for diverse, talented, and passionate artists to join the team.

@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function Portfolio() {
     return (
-        <div className='py-20'>
+        <div className='lg:py-20 unique-work-2'>
             <div className='container border-custom'>
-                <h2 className='text-[4vw] productBold'>Our work</h2>
+                <h2 className='text-[4vw] productBold title-work'>Our work</h2>
 
                 <div className='lg:grid block lg:grid-cols-2 gap-8'>
                     <div className='mt-8'>
@@ -25,7 +25,7 @@ export default function Portfolio() {
                         <img src="/assets/images/p5.png" className='w-full h-[40vw] object-cover rounded-[1vw]' alt='' />
                         <p className='lorem-ipsum mt-[0.8vw]'>X-Leap - website for blockchain-based payment platform
                         </p>
-                        <a href='https://www.behance.net/BlueberrysClub'>
+                        <a className='want-more' href='https://www.behance.net/BlueberrysClub'>
 
                             <h1 className='text-[3.5vw] font-bold productBold pt-12 flex items-center'>
                                 Want more?

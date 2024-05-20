@@ -1,12 +1,22 @@
-import React, { useEffect, useState,  useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import Scrollbar from 'smooth-scrollbar';
 import OverscrollPlugin from 'smooth-scrollbar/plugins/overscroll';
 import AnimatedCursor from 'react-animated-cursor'; // Import AnimatedCursor library
+import Drawer from 'react-modern-drawer'
+
+//import styles 👇
+import 'react-modern-drawer/dist/index.css'
 
 
 const Scroll = () => {
   // const headerRef = useRef(null);
   const [cursorColor, setCursorColor] = useState('0,0,0'); // Initial cursor color
+
+  const [isOpen, setIsOpen] = React.useState(false)
+  const toggleDrawer = () => {
+    setIsOpen((prevState) => !prevState)
+  }
+
 
   useEffect(() => {
     const bodyScrollBar = Scrollbar.init(document.body, {
@@ -48,13 +58,13 @@ const Scroll = () => {
     };
   }, []);
 
-  
+
 
 
 
   return (
     <header data-fixed className='header-blurry py-[0.8vw] fixed top-0 left-0 right-0 w-full'>
-      <div className='container'>
+      <div className='container mobile-hidden'>
         <div className='flex justify-between items-center list-section'>
           {/* <div className='logo-main py-4 ml-2'> */}
           <a href='/' className=''>
@@ -70,7 +80,7 @@ const Scroll = () => {
           </a>
 
           {/*  */}
-        
+
 
           <a href='/portfolios' className='text-zoomed'>
             Portfolio
@@ -93,8 +103,55 @@ const Scroll = () => {
 
       </div>
       {/* </div> */}
-     
 
+
+      <div className='lg:hidden'>
+        <div className='flex justify-between items-center px-10 py-2'>
+          <a href='/' className=''>
+            <img src='/assets/images/logo.svg' className='h-[2.3rem]' alt='' />
+          </a>
+
+          <button className='' onClick={toggleDrawer}>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+            </svg>
+
+          </button>
+
+        </div>
+      </div>
+
+      <Drawer
+        open={isOpen}
+        onClose={toggleDrawer}
+        direction='right'
+        className='bla bla bla pt-28'
+      >
+        <div>
+
+          <a href='/contact' className='text-zoomed'>
+            Contacts
+          </a>
+
+          <a href='/expertises' className='text-zoomed'>
+            Expertise
+          </a>
+
+          {/*  */}
+
+
+          <a href='/portfolios' className='text-zoomed'>
+            Portfolio
+          </a>
+
+          <a href="/start" className=' flex items-center text-zoomed'>
+            Start Intake
+
+
+
+          </a>
+        </div>
+      </Drawer>
 
 
 
