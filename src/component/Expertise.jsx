@@ -3,9 +3,9 @@ import React from 'react'
 export default function Expertise() {
     return (
 
-        <div class="relative">
+        <div class="relative bg-white">
             <div className='container'>
-                <h1 className='text-[6.3vw] py-[4.5vw] productBold'>Our expertise in</h1>
+                <h1 className='lg:text-[6.3vw] py-[4.5vw] productBold exp-mobile'>Our expertise in</h1>
             </div>
             <div className='brand-identity-design lg:w-[31.25vw]'>
                 <h2 className='productBold text-[4vw] leading-[4vw] mb-7'>Brand identity  design</h2>

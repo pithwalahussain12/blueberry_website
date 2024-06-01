@@ -10,13 +10,13 @@ export default function Portfolios() {
             {/* <Header /> */}
             <div className='container'>
                 <div className=' pt-[8vw] pb-[8vw]'>
-                    <h2 className='text-[9vw] productBold'>Showcase</h2>
-                    <div className='flex justify-between items-end'>
+                    <h2 className='lg:text-[9vw] productBold exp-end'>Showcase</h2>
+                    <div className='lg:flex justify-between items-end'>
                         <div>
-                            <p class=""><span class="text-[6vw] productBold">5+</span> <label class="productregular text-[1.8vw]">completed projects</label></p>
+                            <p class=""><span class="text-[6vw] productBold">5+</span> <label class="productregular lg:text-[1.8vw]">completed projects</label></p>
                         </div>
                         <div>
-                            <p className='w-[500px] productBold text-[2vw]'>We use holistic design approach
+                            <p className='lg:w-[500px] productBold lg:text-[2vw] lg:pt-0 pt-4 text-we-co'>We use holistic design approach
                                 to tell brand stories, resonate with
                                 values, and create memorable
                                 impressions.</p>

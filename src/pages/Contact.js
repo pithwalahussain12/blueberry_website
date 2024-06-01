@@ -12,7 +12,7 @@ export default function Contact() {
     return (
         <div className='app'>
             {/* <Header /> */}
-            <a href="mailto:creative@blueb.club">
+            <a href="mailto:enquiry@blueb.club">
 
                 {/* <button data-fixed className='btn-email fixed'>
                     <a href="mailto:creative@blueb.club" className='!flex items-center'>

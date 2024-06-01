@@ -11,8 +11,8 @@ export default function ExpertisePage() {
             {/* <Header /> */}
             <div className='container'>
                 <div className='lg:w-[40vw] pt-[7vw] pb-[8vw]'>
-                    <h2 className='text-[9vw] productBold'>Expertise</h2>
-                    <p className='pt-[1vw] productBold text-[1.25vw] '>Focusing on core areas, we combine our creative and
+                    <h2 className='lg:text-[9vw] productBold exp-end'>Expertise</h2>
+                    <p className='pt-[1vw] productBold text-we-co lg:text-[1.25vw] '>Focusing on core areas, we combine our creative and
                         technical skills to uncover brand’s essences.</p>
                 </div>
             </div>

@@ -6,12 +6,12 @@ export default function Worksection() {
             <div className='container'>
                 <div className='lg:flex block items-center justify-between'>
                     <div>
-                        <h2 className='text-[2.2vw] productBold title-port'>Portfolio</h2>
+                        <h2 className='text-[4vw] productBold title-port'>Portfolio</h2>
 
                         <p className='pt-[2vw] para-setting'><span className='text-[2.2vw] productBold'>5+</span> <label className='productregular text-[0.8vw] '>completed projects</label></p>
 
                         <div className='flex mt-[0.5vw]'>
-                            <a href="https://www.behance.net/BlueberrysClub">
+                            <a href="https://www.behance.net/BlueberrysClub" className='btn-behance-one'>
                                 <button className='btn-behance'>
                                     Behance
                                     <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">

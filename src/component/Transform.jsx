@@ -6,7 +6,7 @@ export default function Transform() {
             <div className='container b-bottom-0' style={{ borderBottom: '1px solid #000000', paddingBottom: '3rem' }}>
                 <div className='lg:grid block grid-cols-2 gap'>
                     <div className='flex items-center'>
-                        <div>
+                        <div className='lg:mt-0 mt-16'>
                             <h2 className='lg:text-[6vw] lg:leading-[6vw] productBold text-your mb-8'>Let’s <br />
                                 Transform<br />
                                 Your Brand

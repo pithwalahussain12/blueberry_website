@@ -10,8 +10,8 @@ export default function Footer2() {
                         <div className='col-span-2'>
                             <p className='productBold text-[1.2vw] talk-title'>Let's Talk</p>
                             <h1 className='productBold text-[3vw] pt-[0.5vw] value-bg email-text'>
-                                <a href="mailto:creative@blueb.club">
-                                    creative@blueb.club
+                                <a href="mailto:enquiry@blueb.club">
+                                    enquiry@blueb.club
                                 </a>
                             </h1>
 

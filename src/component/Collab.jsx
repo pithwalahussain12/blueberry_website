@@ -65,19 +65,17 @@ export default function Collab() {
                                 </div>
 
                                 <div className='pt-12 flex items-center'>
-
-                                    <button className='btn-linkdein'>
-                                        <img src='/assets/images/linkedin1.png' alt='' />
-                                        Let’s connect
-                                    </button>
-
+                                    <a href='https://www.linkedin.com/in/imkrishagrawal/'>
+                                        <button className='btn-linkdein'>
+                                            <img src='/assets/images/linkedin1.png' alt='' />
+                                            Let’s connect
+                                        </button>
+                                    </a>
                                     {/* 
                                     <button className='btn-linkdein btn-color  ml-12'>
                                         <img src='/assets/images/whatsapp1.png' alt='' />
                                         Send an app
                                     </button> */}
-
-
                                 </div>
 
 
