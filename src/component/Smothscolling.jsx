@@ -17,8 +17,14 @@ const Scroll = () => {
     setIsOpen((prevState) => !prevState)
   }
 
-  const closeDrawer = () => {
-    setIsOpen(false)
+
+  const openNav = () => {
+    document.getElementById("mySidenav").style.width = "300px";
+  }
+
+  /* Set the width of the side navigation to 0 */
+  const closeNav = () => {
+    document.getElementById("mySidenav").style.width = "0";
   }
 
 
@@ -65,20 +71,17 @@ const Scroll = () => {
 
   return (
     <>
-      <Drawer
-        open={isOpen}
-        onClose={toggleDrawer}
-        direction='right'
-        className='bla bla bla pt-8'
-      >
+      <div id="mySidenav" className="sidenav">
         <div className='flex justify-between items-center'>
           <h2 className='ml-8 text-3xl font-semibold'>Menu</h2>
 
-          <div onClick={closeDrawer}>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 mr-8">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
-            </svg>
+          <div>
+            <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 mr-8">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+              </svg>
 
+            </a>
           </div>
         </div>
         <div className='pt-28'>
@@ -110,7 +113,16 @@ const Scroll = () => {
 
           </a>
         </div>
-      </Drawer>
+      </div>
+
+      {/* <Drawer
+        open={isOpen}
+        onClose={toggleDrawer}
+        direction='right'
+        className='bla bla bla pt-8 mobile-only-m'
+      >
+       
+      </Drawer> */}
       <header data-fixed className='header-blurry py-[0.8vw] fixed top-0 left-0 right-0 w-full'>
         <div className='container mobile-hidden'>
           <div className='flex justify-between items-center list-section'>
@@ -159,7 +171,7 @@ const Scroll = () => {
               <img src='/assets/images/logo.svg' className='h-[2.3rem]' alt='' />
             </a>
 
-            <button className='' onClick={toggleDrawer}>
+            <button className='' onClick={openNav}>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
               </svg>
